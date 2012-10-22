@@ -1,0 +1,1489 @@
+/* 
+	Project: Brew
+	Author: Ryan Hyslop ryan@teabagstudios.com
+*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222; }
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+a {
+  color: #00e; }
+
+a:visited {
+  color: #551a8b; }
+
+a:hover {
+  color: #06e; }
+
+a:focus {
+  outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active {
+  outline: 0; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+small {
+  font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+figure {
+  margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+form {
+  margin: 0; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+button, input {
+  line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+button[disabled], input[disabled] {
+  cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/* Colors for form validity */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd; }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td {
+  vertical-align: top; }
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   
+   Author: Teabag Studios
+   
+   ========================================================================== */
+/* =======================
+	Base
+	- Define base styles to be inherited at the element level, no classes or id's should be in this section
+   ======================= */
+body {
+  font-family: 'Helvetica Nue', sans-serif; }
+
+/* Links */
+/* Typography & Margins */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 10px 0; }
+
+p {
+  margin: 0 0 10px 0; }
+
+/* =======================
+	Layout 
+	- Major componants of design and minor reusable layout classes
+   ======================= */
+.l-wrap {
+  width: 960px;
+  margin: 0 auto; }
+
+/* Two Column Layout */
+.l-two-col .l-main {
+  width: 75%;
+  float: right; }
+
+.l-two-col .l-sidebar {
+  width: 24%;
+  float: left; }
+
+/* Two Column Right Sidebar Layout */
+.l-two-col-right .l-sidebar {
+  float: right; }
+
+/* Three Column Layout */
+.l-three-col .l-main {
+  width: 78%;
+  float: left; }
+
+.l-three-col .l-sidebar {
+  width: 20%;
+  float: left; }
+
+.l-three-col .l-secondary {
+  width: 20%;
+  float: right; }
+
+.l-three-col .l-col-subset .l-main {
+  float: right; }
+
+/* Utility Layouts */
+.l-inline {
+  padding: 0;
+  margin: 0; }
+
+.l-inline > li {
+  display: inline; }
+
+/* Site Layout */
+/* Header */
+#site-header {
+  border-bottom: 3px solid black;
+  /*tmp*/
+  padding: 10px 0;
+  /*tmp*/
+  background: #eeeeee; }
+
+.side-brand {
+  float: left;
+  margin: 20px; }
+
+#site-header .links {
+  float: right; }
+
+/* Footer */
+#site-footer {
+  padding: 10px 0;
+  /*tmp*/
+  background: #eee;
+  /*tmp*/
+  border-bottom: 3px solid black;
+  /*tmp*/ }
+
+#page {
+  padding: 10px 0;
+  /*tmp*/
+  border-bottom: 3px solid black;
+  /*tmp*/ }
+
+/* Site Modules, Basics are defined earlier and main modules afterwards */
+/* =======================
+	Modules
+   ======================= */
+/*
+Button
+- Different Styles of Buttons across the site 
+- Expected Markup (unfortunately): button > span > span 
+*/
+.button {
+  padding: 5px;
+  background: #eee; }
+
+/*
+Form
+- Global Form Module
+*/
+/* Form List Items */
+.form-list li {
+  margin: 0 0 5px; }
+
+.form-list .required em {
+  color: red; }
+
+/* TODO: Document this selector */
+.form-list .control label {
+  float: none; }
+
+.form-list .wide {
+  width: 100%; }
+
+/*
+ Search
+ - Quick & Advanced Search
+*/
+/*
+ Truncated 
+ - Used throughout Custom options for truncating long options
+*/
+.truncated {
+  cursor: help; }
+
+.truncated a.dots {
+  cursor: help; }
+
+.truncated a.details {
+  cursor: help; }
+
+.truncated .truncated_full_value {
+  position: relative;
+  z-index: 999; }
+
+.truncated .truncated_full_value .item-options {
+  position: absolute;
+  top: -99999em;
+  left: -99999em;
+  z-index: 999;
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6; }
+
+.truncated .truncated_full_value .item-options > p {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.truncated .show .item-options {
+  top: -20px;
+  left: 50%; }
+
+/* 
+ Tooltips
+*/
+.tool-tip {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 5px;
+  position: absolute;
+  z-index: 9999; }
+
+.tool-tip .btn-close {
+  text-align: right; }
+
+.tool-tip .btn-close a {
+  display: block;
+  margin: 0 0 0 auto;
+  width: 15px;
+  height: 15px;
+  background: url(../images/btn_window_close.gif) 100% 0 no-repeat;
+  text-align: left;
+  text-indent: -999em;
+  overflow: hidden; }
+
+.tool-tip-content {
+  padding: 5px; }
+
+/*
+ Block 
+ - Controls sub region styling across the site.
+*/
+.block {
+  margin: 0 0 10px 0; }
+
+/* Block: Account */
+/* Block: Currency Switcher */
+/* Block: Layered Navigation */
+.block-layered-nav ol {
+  margin: 0;
+  padding: 0; }
+
+/* Block: Cart */
+/* Block: Wishlist */
+/* Block: Related */
+/* Block: Compare Products */
+/* Block: Recently Viewed */
+/* Block: Recently Compared */
+/* Block: Poll */
+/* Block: Tags */
+.block-tags ul,
+.block-tags li {
+  display: inline; }
+
+/* Block: Subscribe */
+/* Block: Reorder */
+/* Block: Banner */
+/* Block: Login */
+/* Block: Checkout Progress */
+/* 
+	Navigation
+	- Styles that control the sites navigation
+*/
+.nav {
+  border: 1px solid #ddd;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 13px; }
+
+.nav-dropdown li {
+  text-align: left;
+  position: relative; }
+
+.nav-dropdown li.over {
+  z-index: 998; }
+
+.nav-dropdown li a {
+  display: block;
+  text-decoration: none; }
+
+.nav-dropdown li a:hover {
+  text-decoration: none; }
+
+.nav-dropdown li a span {
+  display: block;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.nav-dropdown li ul a span {
+  white-space: normal; }
+
+.nav-dropdown li {
+  float: left; }
+
+.nav-dropdown li a {
+  float: left;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #888; }
+
+.nav-dropdown li a:hover {
+  color: #000; }
+
+.nav-dropdown li.over a,
+.nav-dropdown li.active a {
+  color: #000; }
+
+.nav-dropdown ul,
+.nav-dropdown div {
+  position: absolute;
+  width: 15em;
+  top: 25px;
+  left: -10000px;
+  border: 1px solid #ddd;
+  background: #fafafa; }
+
+.nav-dropdown div ul {
+  position: static;
+  width: auto;
+  border: none; }
+
+.nav-dropdown ul ul,
+.nav-dropdown ul div {
+  top: 7px; }
+
+.nav-dropdown ul li {
+  float: none;
+  border-bottom: 1px solid #ddd; }
+
+.nav-dropdown ul li.last {
+  border-bottom: 0; }
+
+.nav-dropdown ul li a {
+  float: none;
+  padding: 3px 9px;
+  font-weight: normal;
+  color: #888 !important; }
+
+.nav-dropdown ul li a:hover {
+  color: #000 !important; }
+
+.nav-dropdown ul li.active > a,
+.nav-dropdown ul li.over > a {
+  color: #000 !important; }
+
+.nav-dropdown li ul.shown-sub,
+.nav-dropdown li div.shown-sub {
+  left: 0;
+  z-index: 999; }
+
+.nav-dropdown li .shown-sub ul.shown-sub,
+.nav-dropdown li .shown-sub li div.shown-sub {
+  left: 100px; }
+
+/*
+ Category
+ - Controls all category styles and formatting
+*/
+/*** 
+	Product abstraction for Boilerplate Theme
+
+	- product 
+		- product-list
+		- product-grid
+		- product-view
+	- rating
+	- availability
+***/
+/* 
+	Product List 
+	- .products-grid class name retained for backward compatibility
+*/
+/* List type: Grid */
+.products-grid,
+.product-grid {
+  margin: 0;
+  padding: 0; }
+
+.products-grid .item,
+.product-grid .item {
+  list-style-type: none; }
+
+/* View Type: List */
+.product-collateral .box-collateral {
+  margin: 0 0 15px; }
+
+/* Product Images */
+.product-view .product-img-box {
+  float: left; }
+
+.product-view .product-img-box .product-image-zoom {
+  position: relative;
+  width: 265px;
+  height: 265px;
+  overflow: hidden;
+  z-index: 9; }
+
+.product-view .product-img-box .product-image-zoom img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: move; }
+
+.product-view .product-img-box .zoom-notice {
+  text-align: center; }
+
+.product-view .product-img-box .zoom {
+  position: relative;
+  z-index: 9;
+  height: 18px;
+  margin: 0 auto 13px;
+  padding: 0 28px;
+  background: url(../images/slider_bg.gif) 50% 50% no-repeat;
+  cursor: pointer; }
+
+.product-view .product-img-box .zoom.disabled {
+  -moz-opacity: .3;
+  -webkit-opacity: .3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  /*IE8*/
+  opacity: .3; }
+
+.product-view .product-img-box .zoom #track {
+  position: relative;
+  height: 18px; }
+
+.product-view .product-img-box .zoom #handle {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 9px;
+  height: 22px;
+  background: url(../images/magnifier_handle.gif) 0 0 no-repeat; }
+
+.product-view .product-img-box .zoom .btn-zoom-out {
+  position: absolute;
+  left: 2px;
+  top: 0; }
+
+.product-view .product-img-box .zoom .btn-zoom-in {
+  position: absolute;
+  right: 2px;
+  top: 0; }
+
+.product-view .product-img-box .more-views ul {
+  margin-left: -4px; }
+
+.product-view .product-img-box .more-views li {
+  float: left;
+  padding: 1px;
+  background-color: #ddd;
+  margin: 0 0 8px 4px; }
+
+.product-image-popup {
+  margin: 0 auto; }
+
+.product-image-popup .buttons-set {
+  float: right;
+  clear: none;
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+.product-image-popup .nav {
+  margin: 0 100px;
+  text-align: center; }
+
+.product-image-popup .image {
+  display: block; }
+
+/* Product Shop */
+/* Product Options */
+.product-options {
+  padding: 10px;
+  margin: 10px 0 0;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6; }
+
+.product-options dt label {
+  font-weight: bold; }
+
+.product-options dt .qty-holder {
+  float: right; }
+
+.product-options dt .qty-holder label {
+  vertical-align: middle; }
+
+.product-options dt .qty-disabled {
+  background: none;
+  border: 0;
+  padding: 3px;
+  color: #000; }
+
+.product-options dd {
+  margin: 10px 0; }
+
+.product-options dd input.input-text {
+  width: 98%; }
+
+.product-options dd input.datetime-picker {
+  width: 150px; }
+
+.product-options dd .time-picker {
+  display: -moz-inline-box;
+  display: inline-block;
+  padding: 2px 0;
+  vertical-align: middle; }
+
+.product-options dd textarea {
+  width: 98%;
+  height: 8em; }
+
+.product-options dd select {
+  width: 100%; }
+
+.product-options .options-list input.radio {
+  float: left;
+  margin: 3px -18px 0 0; }
+
+.product-options .options-list input.checkbox {
+  float: left;
+  margin: 3px -20px 0 0; }
+
+.product-options .options-list .label {
+  display: block;
+  margin-left: 20px; }
+
+.product-options ul.validation-failed {
+  padding: 0 7px; }
+
+.product-options p.required {
+  padding: 15px 0 0; }
+
+.product-options-bottom {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top: 0; }
+
+.product-options-bottom .price-box {
+  margin: 10px 0; }
+
+/* Grouped Product */
+/* Block: Description */
+/* Block: Additional */
+/* Block: Upsell */
+.product-view .box-up-sell .products-grid td {
+  width: 25%; }
+
+/* Block: Tags */
+.product-view .box-tags .form-add label {
+  float: left; }
+
+.product-view .box-tags .form-add .input-box {
+  float: left;
+  width: 260px;
+  margin: 0 5px; }
+
+.product-view .box-tags .form-add input.input-text {
+  width: 254px; }
+
+.product-view .box-tags .form-add p {
+  clear: both; }
+
+/* Ratings */
+.no-rating {
+  margin: 0; }
+
+.rating-box {
+  width: 70px;
+  height: 13px;
+  font-size: 0;
+  line-height: 0;
+  background: url(../images/bkg_rating.gif) 0 0 repeat-x;
+  text-indent: -999em;
+  overflow: hidden; }
+
+.rating-box .rating {
+  float: left;
+  height: 13px;
+  background: url(../images/bkg_rating.gif) 0 100% repeat-x; }
+
+.ratings .rating-box {
+  float: left;
+  margin-right: 5px; }
+
+.ratings-table th,
+.ratings-table td {
+  font-size: 11px;
+  line-height: 1.15;
+  padding: 3px 0; }
+
+.ratings-table th {
+  font-weight: bold;
+  padding-right: 8px; }
+
+/* Availability */
+/* 
+ Add To 
+ - Links that control the styling of adding to basket / wishlist / compare
+*/
+/*
+ Cart
+ - The shopping cart 
+*/
+/* Checkout Types */
+/* Shopping Cart Table */
+/* Shopping Cart Collateral boxes */
+.cart .crosssell h2 {
+  font-size: 13px;
+  font-weight: bold; }
+
+.cart .crosssell .product-image {
+  float: left;
+  width: 75px;
+  height: 75px;
+  border: 1px solid #ddd; }
+
+.cart .crosssell .product-details {
+  margin-left: 90px; }
+
+.cart .crosssell li.item {
+  margin: 12px 0; }
+
+/* Discount Codes & Estimate Shipping and Tax Boxes */
+/* Shopping Cart Totals */
+.cart .totals {
+  float: right; }
+
+.cart .totals table {
+  width: 100%; }
+
+.cart .totals table th,
+.cart .totals table td {
+  padding: 5px; }
+
+.cart .totals table th {
+  font-weight: bold; }
+
+/* Options Tool Tip */
+.item-options dt {
+  font-weight: bold;
+  font-style: italic; }
+
+.item-options dd {
+  padding-left: 10px; }
+
+.col-left .truncated .show .item-options {
+  left: 30px;
+  top: 7px; }
+
+.col-right .truncated .show .item-options {
+  left: -240px;
+  top: 7px; }
+
+/*
+ Shipping & Payment Methods 
+*/
+.sp-methods dt {
+  font-weight: bold; }
+
+.sp-methods select.month {
+  width: 150px;
+  margin-right: 10px; }
+
+.sp-methods select.year {
+  width: 96px; }
+
+.sp-methods input.cvv {
+  width: 3em !important; }
+
+.sp-methods .checkmo-list li {
+  margin: 0 0 5px; }
+
+.sp-methods .checkmo-list label {
+  width: 135px;
+  padding-right: 10px;
+  text-align: right; }
+
+.sp-methods .checkmo-list address {
+  float: left; }
+
+.sp-methods .centinel-logos a {
+  margin-right: 3px; }
+
+.sp-methods .centinel-logos img {
+  vertical-align: middle; }
+
+.sp-methods .release-amounts {
+  margin: 0.5em 0 1em; }
+
+.sp-methods .release-amounts button {
+  float: left;
+  margin: 5px 10px 0 0; }
+
+.please-wait {
+  float: right;
+  margin-right: 5px; }
+
+.please-wait img {
+  vertical-align: middle; }
+
+.cvv-what-is-this {
+  cursor: help;
+  margin-left: 5px; }
+
+/* 
+ Gift Messages 
+*/
+.gift-messages-form .product-img-box {
+  float: left;
+  width: 75px; }
+
+.gift-messages-form .product-image {
+  margin: 0 0 7px; }
+
+.gift-messages-form .number {
+  margin: 0;
+  font-weight: bold;
+  text-align: center; }
+
+.gift-messages-form .details {
+  margin-left: 90px; }
+
+.gift-message-link {
+  display: block;
+  background: url(../images/bkg_collapse.gif) 0 4px no-repeat;
+  padding-left: 20px; }
+
+.gift-message-link.expanded {
+  background-position: 0 -53px; }
+
+.gift-message-row .btn-close {
+  float: right; }
+
+.gift-message dt strong {
+  font-weight: bold; }
+
+/* 
+ Checkout Agreements 
+*/
+.checkout-agreements li {
+  margin: 10px 0; }
+
+.checkout-agreements .agreement-content {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 5px;
+  height: 10em;
+  overflow: auto; }
+
+.checkout-agreements .agree {
+  padding: 6px; }
+
+/* 
+ Centinel 
+*/
+/* 
+ One Page Checkout 
+*/
+.opc {
+  border-bottom: 1px solid #ddd;
+  position: relative; }
+
+.opc .section {
+  border: 1px solid #ddd;
+  border-bottom: 0; }
+
+.opc .buttons-set.disabled button.button {
+  display: none; }
+
+.opc .allow .step-title {
+  cursor: pointer; }
+
+/*.opc .allow .step-title a { display:block; }*/
+/*.opc .active .step-title a { display:none; }*/
+/* 
+ Multiple Addresses Checkout 
+*/
+/* 
+ Price
+ - Base Styles For Prices Throughout Site
+*/
+.price {
+  white-space: nowrap; }
+
+.price-label {
+  white-space: nowrap; }
+
+/* Regular price */
+/* Old price */
+/* Special price */
+/* Minimal price (as low as) */
+/* Excluding tax */
+/* Including tax */
+/* Configured price */
+/* FPT */
+/* Excl tax (for order tables) */
+/* Incl tax (for order tables) */
+/* Price range */
+/* Price notice next to the options */
+/* Price as configured */
+/* 
+ Dashboard
+ - Styling for the Customer Login Area
+*/
+/* Block: Recent Orders */
+.dashboard .box-recent {
+  margin: 10px 0; }
+
+/* Block: Account Information */
+/* Block: Reviews */
+.dashboard .box-reviews .number {
+  float: left;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  margin: 3px -20px 0 0;
+  padding: 2px 3px;
+  background: #ddd; }
+
+.dashboard .box-reviews .details {
+  margin-left: 20px; }
+
+/* Block: Tags */
+.dashboard .box-tags .number {
+  float: left;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  margin: 3px -20px 0 0;
+  padding: 2px 3px;
+  background: #ddd; }
+
+.dashboard .box-tags .details {
+  margin-left: 20px; }
+
+/* Address Book */
+/* Order View */
+.order-info {
+  border: 1px solid #ddd;
+  padding: 5px; }
+
+.order-info dt,
+.order-info dd,
+.order-info ul,
+.order-info li {
+  display: inline; }
+
+.order-info dt {
+  font-weight: bold; }
+
+.order-date {
+  margin: 10px 0; }
+
+.order-items {
+  width: 100%;
+  overflow-x: auto; }
+
+.order-additional {
+  margin: 15px 0; }
+
+/* Order Gift Message */
+.gift-message dt strong {
+  color: #666; }
+
+.gift-message dd {
+  font-size: 13px;
+  margin: 5px 0 0; }
+
+/* Order Comments */
+.order-about dt {
+  font-weight: bold; }
+
+.order-about dd {
+  font-size: 13px;
+  margin: 0 0 7px; }
+
+.tracking-table {
+  margin: 0 0 15px; }
+
+.tracking-table th {
+  font-weight: bold;
+  white-space: nowrap; }
+
+.tracking-table-popup {
+  width: 100%; }
+
+.tracking-table-popup th {
+  font-weight: bold;
+  white-space: nowrap; }
+
+.tracking-table-popup th,
+.tracking-table-popup td {
+  padding: 1px 8px; }
+
+/* Order Print Pages */
+.page-print .print-head img {
+  float: left; }
+
+.page-print .print-head address {
+  float: left;
+  margin-left: 15px; }
+
+/* Price Rewrites */
+.page-print .gift-message-link {
+  display: none; }
+
+.page-print .price-excl-tax,
+.page-print .price-incl-tax {
+  display: block;
+  white-space: nowrap; }
+
+.page-print .cart-price,
+.page-print .price-excl-tax .label,
+.page-print .price-incl-tax .label,
+.page-print .price-excl-tax .price,
+.page-print .price-incl-tax .price {
+  display: inline; }
+
+/* My Reviews */
+.product-review .product-img-box {
+  float: left;
+  width: 140px; }
+
+.product-review .product-img-box .product-image {
+  display: block;
+  width: 125px;
+  height: 125px; }
+
+.product-review .product-img-box .label {
+  font-size: 11px;
+  margin: 0 0 3px; }
+
+.product-review .product-img-box .ratings .rating-box {
+  float: none;
+  display: block;
+  margin: 0 0 3px; }
+
+.product-review .product-details {
+  margin-left: 150px; }
+
+.product-review .product-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px; }
+
+.product-review .ratings-table {
+  margin: 0 0 10px; }
+
+.product-review dt {
+  font-weight: bold; }
+
+.product-review dd {
+  font-size: 13px;
+  margin: 5px 0 0; }
+
+/* =======================
+	State 
+   ======================= */
+.is-hidden {
+  display: none; }
+
+/*
+  Legacy Clears
+  - These are clears for some 'standard' magento containers
+  	Keeping these helps us minimise the amount of markup we need to change
+  	from the base theme. Although in an ideal world we wouldn't need them and they'd
+  	all use the 'group' utility clear class.
+*/
+.l-wrap:after,
+.clearer:after,
+.header-container:after,
+.header-container .top-container:after,
+.header:after,
+.header .quick-access:after,
+#nav:after,
+.main:after,
+.footer:after,
+.footer-container .bottom-container:after,
+.col-main:after,
+.col2-set:after,
+.col3-set:after,
+.col4-set:after,
+.search-autocomplete li:after,
+.block .block-content:after,
+.block .actions:after,
+.block li.item:after,
+.block-poll li:after,
+.block-layered-nav .currently li:after,
+.page-title:after,
+.products-grid:after,
+.products-list li.item:after,
+.box-account .box-head:after,
+.dashboard .box .box-title:after,
+.box-reviews li.item:after,
+.box-tags li.item:after,
+.pager:after,
+.sorter:after,
+.ratings:after,
+.add-to-box:after,
+.add-to-cart:after,
+.product-essential:after,
+.product-collateral:after,
+.product-view .product-img-box .more-views ul:after,
+.product-view .product-shop .short-description:after,
+.product-view .box-description:after,
+.product-view .box-tags .form-add:after,
+.product-options .options-list li:after,
+.product-options-bottom:after,
+.product-review:after,
+.cart:after,
+.cart-collaterals:after,
+.cart .crosssell li.item:after,
+.opc .step-title:after,
+.checkout-progress:after,
+.multiple-checkout .place-order:after,
+.group-select li:after,
+.form-list li:after,
+.form-list .field:after,
+.buttons-set:after,
+.page-print .print-head:after,
+.advanced-search-summary:after,
+.gift-messages-form .item:after,
+.send-friend .form-list li p:after {
+  display: block;
+  content: ".";
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden; }
+
+/* =======================
+	Theme 
+   ======================= */
+/* ==================== 
+	Media Queries
+=====================*/
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+.ir br {
+  display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.group:before, .group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  *zoom: 1; }
+
+/* Magento Dependant ns helpers */
+.hidden {
+  display: block !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important; }
+
+.nobr {
+  white-space: nowrap !important; }
+
+.wrap {
+  white-space: normal !important; }
+
+.a-left {
+  text-align: left !important; }
+
+.a-center {
+  text-align: center !important; }
+
+.a-right {
+  text-align: right !important; }
+
+.v-top {
+  vertical-align: top; }
+
+.v-middle {
+  vertical-align: middle; }
+
+.f-left,
+.left {
+  float: left !important; }
+
+.f-right,
+.right {
+  float: right !important; }
+
+.f-none {
+  float: none !important; }
+
+.f-fix {
+  float: left;
+  width: 100%; }
+
+.no-display {
+  display: none; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.no-bg {
+  background: none !important; }
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  /* Black prints faster: h5bp.com/s */
+  a, a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  /* h5bp.com/t */
+  tr, img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; } }

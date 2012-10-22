@@ -1,0 +1,120 @@
+/* 
+	Navigation
+	- Styles that control the sites navigation
+*/
+
+.nav {
+	border: 1px solid #ddd;
+	padding: 5px 0;
+	margin: 10px 0;
+	font-size: 13px;
+}
+
+.nav-dropdown li {
+	text-align: left;
+	position: relative;
+}
+
+.nav-dropdown li.over {
+	z-index: 998;
+}
+
+.nav-dropdown li.parent {
+	
+}
+
+.nav-dropdown li a {
+	display: block;
+	text-decoration: none;
+}
+
+.nav-dropdown li a:hover {
+	text-decoration: none;
+}
+
+.nav-dropdown li a span {
+	display: block;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.nav-dropdown li ul a span {
+	white-space: normal;
+}
+
+.nav-dropdown li {
+	float: left;
+}
+
+.nav-dropdown li a {
+	float: left;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #888;
+}
+
+.nav-dropdown li a:hover {
+	color: #000;
+}
+
+.nav-dropdown li.over a,
+.nav-dropdown li.active a {
+	color: #000;
+}
+
+.nav-dropdown ul,
+.nav-dropdown div {
+	position: absolute;
+	width: 15em;
+	top: 25px;
+	left: -10000px;
+	border: 1px solid #ddd;
+	background: #fafafa;
+}
+
+.nav-dropdown div ul {
+	position: static;
+	width: auto;
+	border: none;
+}
+
+.nav-dropdown ul ul,
+.nav-dropdown ul div {
+	top: 7px;
+}
+
+.nav-dropdown ul li {
+	float: none;
+	border-bottom: 1px solid #ddd;
+}
+
+.nav-dropdown ul li.last {
+	border-bottom: 0;
+}
+
+.nav-dropdown ul li a {
+	float: none;
+	padding: 3px 9px;
+	font-weight: normal;
+	color: #888 !important;
+}
+
+.nav-dropdown ul li a:hover {
+	color: #000 !important;
+}
+
+.nav-dropdown ul li.active > a,
+.nav-dropdown ul li.over > a {
+	color: #000 !important;
+}
+
+.nav-dropdown li ul.shown-sub,
+.nav-dropdown li div.shown-sub {
+	left: 0;
+	z-index: 999;
+}
+
+.nav-dropdown li .shown-sub ul.shown-sub,
+.nav-dropdown li .shown-sub li div.shown-sub {
+	left: 100px;
+}

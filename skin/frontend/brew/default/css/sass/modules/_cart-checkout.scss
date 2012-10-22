@@ -1,0 +1,177 @@
+/* 
+ Add To 
+ - Links that control the styling of adding to basket / wishlist / compare
+*/
+
+.add-to-links { }
+
+.add-to-cart label { }
+.add-to-cart .qty { }
+.add-to-cart button.button { }
+.add-to-cart .paypal-logo { }
+.add-to-cart .paypal-logo .paypal-or { }
+
+
+/*
+ Cart
+ - The shopping cart 
+*/
+
+.cart {}
+
+/* Checkout Types */
+.cart .checkout-types {}
+.cart .title-buttons .checkout-types li {}
+.cart .checkout-types .paypal-or  {}
+.cart .totals .checkout-types .paypal-or {}
+
+/* Shopping Cart Table */
+.cart-table .item-msg {}
+
+/* Shopping Cart Collateral boxes */
+.cart .cart-collaterals { }
+.cart .cart-collaterals .col2-set {  }
+
+.cart .crosssell {}
+.cart .crosssell h2 { font-size:13px; font-weight:bold; }
+.cart .crosssell .product-image { float:left; width:75px; height:75px; border:1px solid #ddd; }
+.cart .crosssell .product-details { margin-left:90px; }
+.cart .crosssell li.item { margin:12px 0; }
+
+/* Discount Codes & Estimate Shipping and Tax Boxes */
+.cart .discount,
+.cart .shipping {}
+
+/* Shopping Cart Totals */
+.cart .totals { float:right; }
+.cart .totals table { width:100%; }
+.cart .totals table th,
+.cart .totals table td { padding:5px; }
+.cart .totals table th { font-weight:bold; }
+.cart .totals table tfoot th {}
+
+/* Options Tool Tip */
+.item-options dt { font-weight:bold; font-style:italic; }
+.item-options dd { padding-left:10px; }
+
+.col-left .truncated .show .item-options { left:30px; top:7px; }
+.col-right .truncated .show .item-options  { left:-240px; top:7px; }
+
+
+
+/*
+ Shipping & Payment Methods 
+*/
+
+.sp-methods dt { font-weight:bold; }
+.sp-methods select.month { width:150px; margin-right:10px; }
+.sp-methods select.year { width:96px; }
+.sp-methods input.cvv { width:3em !important; }
+
+.sp-methods .checkmo-list li { margin:0 0 5px; }
+.sp-methods .checkmo-list label { width:135px; padding-right:10px; text-align:right; }
+.sp-methods .checkmo-list address { float:left; }
+
+.sp-methods .centinel-logos a { margin-right:3px; }
+.sp-methods .centinel-logos img { vertical-align:middle; }
+
+.sp-methods .release-amounts { margin:0.5em 0 1em; }
+.sp-methods .release-amounts button { float:left; margin:5px 10px 0 0; }
+
+.please-wait { float:right; margin-right:5px; }
+.please-wait img { vertical-align:middle; }
+.cvv-what-is-this { cursor:help; margin-left:5px; }
+
+
+
+/* 
+ Gift Messages 
+*/
+
+.gift-messages {}
+.gift-messages-form { }
+.gift-messages-form { }
+.gift-messages-form label { }
+.gift-messages-form h4 {}
+.gift-messages-form .whole-order {}
+.gift-messages-form .item {}
+.gift-messages-form .product-img-box { float:left; width:75px; }
+.gift-messages-form .product-image { margin:0 0 7px; }
+.gift-messages-form .number { margin:0; font-weight:bold; text-align:center; }
+.gift-messages-form .details { margin-left:90px; }
+.gift-messages-form .product-name {}
+
+.gift-message-link { display:block; background:url(../images/bkg_collapse.gif) 0 4px no-repeat; padding-left:20px; }
+.gift-message-link.expanded { background-position:0 -53px; }
+.gift-message-row {}
+.gift-message-row .btn-close { float:right; }
+.gift-message dt strong { font-weight:bold; }
+
+/* 
+ Checkout Agreements 
+*/
+
+.checkout-agreements {}
+.checkout-agreements li { margin:10px 0; }
+.checkout-agreements .agreement-content { border:1px solid #ddd; background-color:#f6f6f6; padding:5px; height:10em; overflow:auto; }
+.checkout-agreements .agree { padding:6px; }
+
+/* 
+ Centinel 
+*/
+.centinel {}
+.centinel .authentication {}
+.centinel .authentication iframe {}
+
+
+
+/* 
+ One Page Checkout 
+*/
+
+.opc { 
+	border-bottom:1px solid #ddd; position:relative; 
+}
+
+.opc .section { 
+	border:1px solid #ddd; border-bottom:0;
+}
+
+.opc .buttons-set.disabled button.button { 
+	display:none; 
+}
+
+.opc .buttons-set .please-wait {}
+
+.opc .step-title {}
+.opc .step-title .number {}
+.opc .step-title h2 {}
+.opc .step-title a {}
+
+.opc .allow .step-title { cursor:pointer; }
+/*.opc .allow .step-title a { display:block; }*/
+
+.opc .active {}
+.opc .active .step-title { }
+/*.opc .active .step-title a { display:none; }*/
+
+.opc .step {}
+.opc .step .tool-tip {}
+
+.opc .order-review {}
+.opc .order-review .authentication {}
+.opc .order-review .warning-message {}
+
+/* 
+ Multiple Addresses Checkout 
+*/
+
+.checkout-progress {}
+.checkout-progress li {}
+.checkout-progress li.active {}
+
+.multiple-checkout {}
+.multiple-checkout .tool-tip {}
+.multiple-checkout .grand-total {}
+.multiple-checkout .grand-total big {}
+.multiple-checkout .grand-total .price {}

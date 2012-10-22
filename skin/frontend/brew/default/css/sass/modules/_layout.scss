@@ -1,0 +1,109 @@
+/* =======================
+	Layout 
+	- Major componants of design and minor reusable layout classes
+   ======================= */
+	
+	.l-wrap {
+		width: 960px;
+		margin: 0 auto;
+	}
+		
+	.l-main {
+	
+	}
+	
+	.l-sidebar {
+	
+	}
+		
+	.l-secondary {
+	
+	}
+	
+	/* Two Column Layout */
+
+	.l-two-col .l-main {
+		width: 75%;
+		float: right;
+	}
+
+	.l-two-col .l-sidebar {
+		width: 24%;
+		float: left;
+	}	
+
+	/* Two Column Right Sidebar Layout */	
+
+	.l-two-col-right .l-sidebar {
+		float:right;
+	}
+	
+	
+	/* Three Column Layout */
+
+	.l-three-col .l-main {
+		width: 78%;
+		float: left;
+	}
+
+	.l-three-col .l-sidebar {
+		width: 20%;
+		float: left;
+	}	
+	
+	.l-three-col .l-secondary {
+		width: 20%;
+		float: right;	
+	}
+	
+	.l-three-col .l-col-subset .l-main {
+		float: right;
+	}
+	
+	/* Utility Layouts */
+	
+	.l-inline {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.l-inline > li {
+		display: inline;
+	}
+	
+	
+	/* Site Layout */
+	
+	#site-container {
+	
+	}
+	
+	/* Header */
+	#site-header {
+		border-bottom: 3px solid black; /*tmp*/
+		padding:10px 0; /*tmp*/
+		background:#eee /*tmp*/
+	}
+	
+	.side-brand {
+		float: left;
+		margin: 20px;
+	}
+	
+	#site-header .links {
+		float: right;
+	}
+	
+	
+	/* Footer */
+	
+	#site-footer {
+		padding: 10px 0; /*tmp*/
+		background:#eee; /*tmp*/
+		border-bottom: 3px solid black; /*tmp*/	
+	}
+	
+	#page {
+		padding: 10px 0; /*tmp*/
+		border-bottom: 3px solid black; /*tmp*/
+	}

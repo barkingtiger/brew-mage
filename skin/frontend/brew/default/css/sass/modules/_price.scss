@@ -1,0 +1,78 @@
+/* 
+ Price
+ - Base Styles For Prices Throughout Site
+*/
+
+.price { white-space:nowrap; }
+.price-label { white-space:nowrap; }
+
+.price-box {}
+.price-box .price {}
+
+/* Regular price */
+.regular-price {}
+.regular-price .price {}
+
+/* Old price */
+.old-price {}
+.old-price .price-label {  }
+.old-price .price {}
+
+/* Special price */
+.special-price {}
+.special-price .price-label { }
+.special-price .price { }
+
+/* Minimal price (as low as) */
+.minimal-price {}
+.minimal-price .price-label { }
+
+.minimal-price-link { }
+.minimal-price-link .label {}
+.minimal-price-link .price { }
+
+/* Excluding tax */
+.price-excluding-tax { }
+.price-excluding-tax .label { }
+.price-excluding-tax .price { }
+
+/* Including tax */
+.price-including-tax { }
+.price-including-tax .label { }
+.price-including-tax .price { }
+
+/* Configured price */
+.configured-price {}
+.configured-price .price-label { }
+.configured-price .price {  }
+
+/* FPT */
+.weee { }
+.weee .price {  }
+
+/* Excl tax (for order tables) */
+.price-excl-tax  {  }
+.price-excl-tax .label { }
+.price-excl-tax .price { }
+
+/* Incl tax (for order tables) */
+.price-incl-tax { }
+.price-incl-tax .label { }
+.price-incl-tax .price { }
+
+/* Price range */
+.price-from {}
+.price-from .price-label { }
+
+.price-to {}
+.price-to .price-label { }
+
+/* Price notice next to the options */
+.price-notice { }
+.price-notice .price { }
+
+/* Price as configured */
+.price-as-configured {}
+.price-as-configured .price-label { }
+
+.price-box-bundle {}

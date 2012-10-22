@@ -1,0 +1,106 @@
+/* =======================
+	Modules
+   ======================= */
+   
+	/*
+	Button
+	- Different Styles of Buttons across the site 
+	- Expected Markup (unfortunately): button > span > span 
+	*/
+	
+	.button {
+		padding: 5px;
+		background: #eee;
+	}
+	
+	.button > span {
+	
+	}
+	
+	/*
+	Form
+	- Global Form Module
+	*/
+
+	.form {}
+	
+	/* Form List Items */
+	
+	.form-list li {
+		margin: 0 0 5px;
+	}
+	
+	.form-list label {
+	
+	}
+	
+	.form-list .required em {
+		color: red;
+	}
+	
+	/* TODO: Document this selector */
+	
+	.form-list .control label {
+		float: none;
+	}
+	
+	.form-list .control .radio,
+	.form-list .control .checkbox {
+		
+	}	
+	
+	.form-list .wide {
+		width: 100%;
+	}
+	
+	
+	/*
+	 Search
+	 - Quick & Advanced Search
+	*/
+	.advanced-search {}
+	.advanced-search-amount {}
+	.advanced-search-summary {}	
+
+
+	/*
+	 Truncated 
+	 - Used throughout Custom options for truncating long options
+	*/
+	
+	.truncated { cursor:help; }
+	.truncated a.dots { cursor:help; }
+	.truncated a.details { cursor:help; }
+	.truncated .truncated_full_value { position:relative; z-index:999; }
+	.truncated .truncated_full_value .item-options { position:absolute; top:-99999em; left:-99999em; z-index:999; width:250px; padding:8px; border:1px solid #ddd; background-color:#f6f6f6; }
+	.truncated .truncated_full_value .item-options > p { font-weight:bold; text-transform:uppercase; }
+	.truncated .show .item-options { top:-20px; left:50%; }	
+	
+	/* 
+	 Tooltips
+	*/
+	
+	.tool-tip { 
+		border:1px solid #ddd; 
+		background-color:#f6f6f6; 
+		padding:5px; 
+		position:absolute; 
+		z-index:9999; 
+	}
+	
+	.tool-tip .btn-close { 
+		text-align:right; 
+	}
+	
+	.tool-tip .btn-close a { 
+		display:block; 
+		margin:0 0 0 auto; 
+		width:15px; 
+		height:15px; 
+		background:url(../images/btn_window_close.gif) 100% 0 no-repeat; 
+		text-align:left; 
+		text-indent:-999em; 
+		overflow:hidden; 
+	}
+	
+	.tool-tip-content { padding:5px; }
