@@ -1,67 +1,99 @@
 <?xml version="1.0"?>
+
 <layout version="0.1.0">
 
 <!-- Layout Updates that effect the whole site -->
-<default>
-	<reference name="head">
-		<!--Removing items set in the page.xml we don't need since we're integrating the HTML 5 boilerplate -->
-		<action method="removeItem"><type>skin_js</type><name>js/ie6.js</name><if>lt IE 7</if></action>
-		<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
-		<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
-        <action method="removeItem"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
-        <!--End "Removing items"-->
+        <default>
 
-        <!--Adding items from boilerplate-->
-        <action method="addItem"><type>skin_js</type><name>js/modernizr.custom.js</name></action>
+                <reference name="root">
+                        <!-- Set the Default Template for your site -->
+                        <action method="setTemplate"><template>page/1column.phtml</template></action>
+                        
+                        <!-- 
+                        ** Create New Regions In Your Templates <?php $this->getChildHtml('new_region'); ?> **
+                        <block type="core/text_list" name="new.region" as="new_region" translate="label">
+                                <label>New Region</label>
+                        </block>
+                        -->
 
-        <action method="addItem"><type>skin_js</type><name>js/selectivizr.js</name><params/><if>lt IE 9</if></action>
-        <!--<action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/><if>lt IE 7</if></action>-->
+                </reference>   
 
-        <!--Formalize Js-->
-        <action method="addItem"><type>skin_js</type><name>js/prototype.formalize.min.js</name><params/></action>
-        <!--Formalize CSS-->
-        
-        <action method="addCss"><stylesheet>css/formalize.css</stylesheet></action>
-        <!--Profiling-->
-        
-        <!--<action method="addItem"><type>skin_js</type><name>js/profiling/config.js</name><params/></action>-->
-        <!--<action method="addItem"><type>skin_js</type><name>js/profiling/yahoo-profiling.css</name><params/></action>-->
-        <!--<action method="addItem"><type>skin_js</type><name>js/profiling/yahoo-profiling.min.js</name><params/></action>-->
+                <reference name="head">
+                <!-- Remove Unneccessary Items from base page.xml -->
+                <action method="removeItem"><type>skin_js</type><name>js/ie6.js</name><if>lt IE 7</if></action>
+                <action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
+                <action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
+                <action method="removeItem"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
+                <!--End "Removing items"-->
 
-        <!--End "Adding items" -->
-	</reference>
-	
-	<remove name="right.permanent.callout" />
-	<remove name="left.permanent.callout" />
-	<remove name="paypal.partner.right.logo" />	
+                <!--Adding items from boilerplate-->
+                <action method="addItem"><type>skin_js</type><name>js/modernizr.custom.js</name></action>
+                <action method="addItem"><type>skin_js</type><name>js/selectivizr.js</name><params/><if>lt IE 9</if></action>
 
-</default>
+                <!--Formalize Js-->
+                <action method="addItem"><type>skin_js</type><name>js/prototype.formalize.min.js</name><params/></action>
+                <!--Formalize CSS-->
+                
+                <!-- Our Scripts.js : Generic Dom manipulations and initalisations -->
+                <action method="addItem"><type>skin_js</type><name>js/scripts.js</name><params/></action>
+                
+                <action method="addCss"><stylesheet>css/formalize.css</stylesheet></action>
+                <!--Profiling-->
 
-<catalog_product_view>
+                <!--End "Adding items" -->
+                </reference>
 
-</catalog_product_view>
+                <!-- Remove Common Blocks that generally aren't required -->
+                <remove name="right.permanent.callout" />
+                <remove name="left.permanent.callout" />
+                <remove name="paypal.partner.right.logo" />	
 
-<!-- Updates Per Layout -->
+        </default>
+<!--
+        CATALOG UPDATES
+        - Category Default
+        - Category Anchor/Layered
+        - Product View
+-->
+   
+        <catalog_category_default>
+                <!-- Amend your default categories here -->
+        </catalog_category_default>
 
-<page_one_column translate="label">
-	<!-- Update Layout -->
-</page_one_column>
+        <catalog_category_layered>
+                <!-- Amend your layered categories here -->
+        </catalog_category_layered>
+
+        <catalog_product_view>
+                <!-- Amend Your Product View Here -->
+        </catalog_product_view>
+
+<!--
+        PAGE UPDATES
+        - One Column
+        - Two Column Left
+        - Two Column Right
+        - Three Columns
+-->
+
+        <page_one_column translate="label">
+                <!-- Update Layout -->
+        </page_one_column>
 
 
-<page_two_columns_left translate="label">
-	<!-- Update Layout -->
-</page_two_columns_left>
+        <page_two_columns_left translate="label">
+                <!-- Update Layout -->
+        </page_two_columns_left>
 
 
-<page_two_columns_right translate="label">
-	<!-- Update Layout -->
-</page_two_columns_right>
+        <page_two_columns_right translate="label">
+                <!-- Update Layout -->
+        </page_two_columns_right>
 
 
-<page_three_columns translate="label">
-	<!-- Update Layout -->
-</page_three_columns>
-
+        <page_three_columns translate="label">
+                <!-- Update Layout -->
+        </page_three_columns>
 
 
 
