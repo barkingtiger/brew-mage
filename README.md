@@ -1,4 +1,4 @@
 brew-mage
 =========
 
-A Magento Boilerplate Theme
+A Magento Boilerplate Theme.
